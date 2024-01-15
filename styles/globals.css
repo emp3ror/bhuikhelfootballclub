@@ -15,3 +15,52 @@ h6 {
 body {
   font-family: var(--font-secondary);
 }
+
+/*Sentence*/
+.sentence{
+  color: #222;
+  font-size: 30px;
+  text-align: left;
+}
+/*Wrapper*/
+.wrapper{
+ background-color: #f5f5f5;
+ font-family: 'Raleway', sans-serif;
+ margin: 100px auto;
+ padding: 40px 40px;
+ position: relative;
+ width: 70%;
+}
+
+/*Vertical Sliding*/
+.slidingVertical{
+display: inline;
+text-indent: 8px;
+}
+.slidingVertical span{
+animation: topToBottom 8s linear infinite 0s;
+-ms-animation: topToBottom 8s linear infinite 0s;
+-webkit-animation: topToBottom 8s linear infinite 0s;
+color: #00abe9;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+}
+.slidingVertical span:nth-child(2){
+animation-delay: 4s;
+}
+
+
+/*topToBottom Animation*/
+@keyframes topToBottom{
+0% { opacity: 0; }
+/* 5% { opacity: 0; transform: translateY(-50px); } */
+10% { opacity: 0; transform: translateY(-50px); }
+20% { opacity: 1; transform: translateY(0px); }
+30% { opacity: 1; transform: translateY(0px); }
+60% { opacity: 1; transform: translateY(0px); }
+75% { opacity: 0; transform: translateY(50px); }
+100% { opacity: 0; }
+}
+
+
