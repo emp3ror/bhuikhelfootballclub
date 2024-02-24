@@ -1,0 +1,4 @@
+baseURL = 'https://bhuikhelfootballclub.org/'
+languageCode = 'en-us'
+title = 'bhuikhel football club'
+theme = 'bfc'
