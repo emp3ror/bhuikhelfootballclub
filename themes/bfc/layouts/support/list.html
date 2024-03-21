@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="d-flex align-items-center">
+    <img src="/assets/img/banner.jpg" alt="" width="100%">
+    
+</section><!-- End Hero -->
+  <section id="about" class="about">
+    <div class="container" >
+
+      <div class="section-title">
+        <h2>{{.Title}}</h2>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-8 offset-md-2">
+          {{.Content}}
+        </div>
+        
+      </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+  {{ end }}

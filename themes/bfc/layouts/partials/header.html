@@ -1,2 +1,48 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<div id="fb-root"></div>
+
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<Script strategy="lazyOnload">
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "100408728787421");
+    chatbox.setAttribute("attribution", "biz_inbox");
+
+    window.fbAsyncInit = function() {
+    FB.init({
+        xfbml            : true,
+        version          : 'v19.0'
+    });
+    };
+
+    (function(d, s, id) {
+    let js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</Script>
+
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top " style="background: rgba(40, 58, 90, 0.9);">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="/index.html">BFC</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li><a class="nav-link scrollto" href="/#rules">Rules</a></li>
+          
+          <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="/">Tournament</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  
